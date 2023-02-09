@@ -10,98 +10,97 @@
       src="https://kit.fontawesome.com/3bc05242f5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <section id="landing">
-      <div class="row">
-        <nav>
-          <div class="nav__link--logo">
+      <nav>
+        <div class="row nav__row">
+          <div class="nav__logo">
             <img
+              class="nav__logo--img"
               src="./assets/treactlogo.svg"
-              class="treact__logo--img"
-              alt=""
+              alt="logo"
             />
-            <div class="treact__logo">Treact</div>
+            <div class="nav__logo--title">Treact</div>
           </div>
-          <ul class="nav__link--list">
-            <li>
-              <a
-                href="#"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                >Pricing</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav__link--anchor link__hover-effect link__hover-effect--black"
-                >Login</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav__link--anchor--primary link__hover-effect link__hover-effect--black"
-                >Sign Up</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+          <div class="nav__links">
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link login">Login</a>
+            <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="btn__menu--svg"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
       <header>
-        <div class="row">
-          <div class="for__you">
-            <div class="for__you--text">
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
               <h1>
                 Beautiful React Templates <span class="purple">for you.</span>
               </h1>
-              <p>
+              <p class="header__description--para">
                 Our templates are easy to setup, understand and customize. Fully
                 modular components with a variety of pages and components.
               </p>
-              <div class="start__btn">
+              <div class="header__email">
                 <input
-                  class="text"
-                  type="email"
+                  type="text"
+                  class="header__email--input"
                   placeholder="Your E-mail Address"
                 />
-                <button class="btn" type="submit">Get Started</button>
+                <button class="header__email--btn">Get Started</button>
               </div>
-              <div class="companies">
-                <p class="companies__text">OUR TRUSTED CUSTOMERS</p>
-                <img
-                  class="companies__img"
-                  src="./assets/companies.png"
-                  alt=""
-                />
-              </div>
+              <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+              <img
+                src="./assets/companies.png"
+                alt=""
+                class="header__customers"
+              />
             </div>
-            <figure>
-              <img class="for__you--img" src="./assets/foryouimg.svg" alt="" />
+            <figure class="header__img--wrapper">
+              <img
+                src="./assets/foryouimg.svg"
+                alt=""
+                class="header__img"
+              />
             </figure>
           </div>
         </div>
+        <svg
+          width="600"
+          height="600"
+          viewBox="0 0 600 600"
+          xmlns="http://www.w3.org/2000/svg"
+          class="header__blob"
+        >
+          <g transform="translate(300,300)">
+            <path
+              d="M176.2,-106.9C208.7,-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,-201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z"
+              fill="#6415ff"
+            ></path>
+          </g>
+        </svg>
       </header>
     </section>
     <main>
@@ -240,7 +239,7 @@
             </div>
             <figure class="quality__img--wrapper">
               <img
-                src="https://treact.owaiskhan.me/static/media/hero-screenshot-1.40a097b5.png"
+                src="./assets/qualityimage.png"
                 alt=""
                 class="quality__img"
               />
@@ -258,7 +257,7 @@
           <div class="row">
             <figure class="steps__img--wrapper">
               <img
-                src="https://treact.owaiskhan.me/static/media/hero-screenshot-2.241aac1f.png"
+                src="./assets/steps.png"
                 alt=""
                 class="steps__img"
               />
@@ -397,7 +396,7 @@
             </div>
             <img
               class="values__img"
-              src="https://treact.owaiskhan.me/static/media/prototype-illustration.21bc4b3f.svg"
+              src="./assets/values.svg"
               alt=""
             />
           </div>
@@ -491,7 +490,7 @@
         <div class="container">
           <div class="row">
             <img
-              src="https://treact.owaiskhan.me/static/media/love-illustration.c759090f.svg"
+              src="./assets/testimonials.svg"
               alt=""
               class="testimonials__img"
             />
@@ -566,7 +565,133 @@
           </div>
         </div>
       </section>
-      
+      <section id="start">
+        <div class="container">
+          <div class="row">
+            <svg viewBox="0 0 600 600" class="start__blob--1">
+              <g transform="translate(300,300)">
+                <path
+                  d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+                  fill="rgb(80,17,204)"
+                ></path>
+              </g>
+            </svg>
+            <svg viewBox="0 0 600 600" class="start__blob--2">
+              <g transform="translate(300,300)">
+                <path
+                  d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+                  fill="rgb(80,17,204)"
+                ></path>
+              </g>
+            </svg>
+            <div class="start__container">
+              <div class="start__row">
+                <div class="start__title">
+                  Developers all over the world are happily using Treact.
+                </div>
+                <div class="start__buttons">
+                  <button class="start__button btn">Get Started</button>
+                  <button class="start__button btn">Contact Us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <svg viewBox="0 0 600 600" class="footer__blob--1">
+        <g transform="translate(300,300)">
+          <path
+            d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+            fill="rgba(80,17,204)"
+          ></path>
+        </g>
+      </svg>
+      <svg viewBox="0 0 600 600" class="footer__blob--2">
+        <g transform="translate(300,300)">
+          <path
+            d="M153.6,-239C199.1,-209.8,236,-167.2,258.4,-118C280.9,-68.9,288.9,-13.1,281.2,40.4C273.5,93.9,250.1,145.2,214.7,186.1C179.3,226.9,131.9,257.4,80,272.6C28.2,287.8,-28.2,287.8,-80,272.6C-131.9,257.4,-179.3,226.9,-214.7,186.1C-250.1,145.2,-273.5,93.9,-281.2,40.4C-288.9,-13.1,-280.9,-68.9,-258.4,-118C-236,-167.2,-199.1,-209.8,-153.6,-239C-108.1,-268.3,-54.1,-284.1,0,-284.1C54.1,-284.1,108.1,-268.3,153.6,-239Z"
+            fill="rgba(80,17,204)"
+          ></path>
+        </g>
+      </svg>
+      <div class="row footer__row">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <div class="footer__column--title">MAIN</div>
+            <a class="footer__column--link">Blog</a>
+            <a class="footer__column--link">FAQs</a>
+            <a class="footer__column--link">Support</a>
+            <a class="footer__column--link">About Us</a>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column--title">PRODUCT</div>
+            <a class="footer__column--link">Log In</a>
+            <a class="footer__column--link">Personal</a>
+            <a class="footer__column--link">Business</a>
+            <a class="footer__column--link">Team</a>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column--title">PRESS</div>
+            <a class="footer__column--link">Logos</a>
+            <a class="footer__column--link">Events</a>
+            <a class="footer__column--link">Stories</a>
+            <a class="footer__column--link">Office</a>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column--title">TEAM</div>
+            <a class="footer__column--link">Career</a>
+            <a class="footer__column--link">Founders</a>
+            <a class="footer__column--link">Culture</a>
+            <a class="footer__column--link">Onboarding</a>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column--title">LEGAL</div>
+            <a class="footer__column--link">GDPR</a>
+            <a class="footer__column--link">Privacy Policy</a>
+            <a class="footer__column--link">Terms of Service</a>
+            <a class="footer__column--link">Disclaimer</a>
+          </div>
+        </div>
+        <div class="footer__divider"></div>
+        <div class="footer__bottom">
+          <div class="footer__logo">
+            <img
+              src="./assets/treactlogo.svg"
+              alt=""
+              class="footer__logo--img"
+            />
+            <h5 class="footer__logo--text">Treact Inc.</h5>
+          </div>
+          <div class="footer__copyright">
+            © 2018 Treact Inc. All Rights Reserved.
+          </div>
+          <div class="footer__socials">
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                ></path>
+              </svg>
+            </a>
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"
+                ></path>
+              </svg>
+            </a>
+            <a class="footer__social--link">
+              <svg fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
